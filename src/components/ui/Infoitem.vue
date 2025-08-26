@@ -33,6 +33,7 @@ const props = defineProps({
   &__text {
     display: flex;
     flex-direction: column;
+    line-height: 3rem;
   }
 
   &__title {
