@@ -33,6 +33,7 @@ const sizeClass = computed(() => (props.size === "md" ? "btn--md" : "btn--lg"));
     font-size: 2.8rem;
 
     @media (max-width: 768px) {
+      padding: 1.8rem 3rem;
       font-size: 2rem;
       min-width: 26rem;
     }

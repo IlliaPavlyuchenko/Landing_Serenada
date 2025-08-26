@@ -61,6 +61,9 @@ const toggleMenu = () => {
   z-index: 100;
   height: 4rem;
   margin-top: 4rem;
+  @media (max-width: 768px) {
+    margin-top: 0.5rem;
+  }
 
   &__in {
     display: flex;

@@ -77,6 +77,9 @@ const swiperBreakpoints = {
   margin-top: -12rem;
   position: relative;
   z-index: 1;
+  @media (max-width: 768px) {
+    margin-top: -5rem;
+  }
 
   &__list {
     display: flex;

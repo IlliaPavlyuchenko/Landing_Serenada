@@ -62,12 +62,15 @@ import calendarIcon from "@/assets/icons/calendar.svg?url";
     width: 100%;
     z-index: -1;
     filter: brightness(0.7);
-    //background-color: $color-bg;
   }
 
   &__content {
     color: $color-white;
     padding-bottom: 15rem;
+
+    @media (max-width: 768px) {
+       padding-bottom: 5rem;
+    }
   }
 
   &__title {
@@ -79,6 +82,7 @@ import calendarIcon from "@/assets/icons/calendar.svg?url";
 
     @media (max-width: 768px) {
        font-size: 2.8rem;
+       margin-bottom: 1rem;
     }
   }
   &__subtitle {
@@ -90,6 +94,7 @@ import calendarIcon from "@/assets/icons/calendar.svg?url";
 
     @media (max-width: 768px) {
        font-size: 1.8rem;
+       margin-bottom: 3rem;
     }
 
     & span {
@@ -104,7 +109,8 @@ import calendarIcon from "@/assets/icons/calendar.svg?url";
     @media (max-width: 768px) {
        flex-direction: column;
        align-items: center;
-       row-gap: 2.5rem;
+       row-gap: 2.2rem;
+       margin-bottom: 2.4rem;
     }
   }
   &__info {
@@ -114,7 +120,7 @@ import calendarIcon from "@/assets/icons/calendar.svg?url";
      @media (max-width: 768px) {
        flex-direction: column;
        align-items: flex-start;
-       row-gap: 2.5rem;
+       row-gap: 1rem;
        width: 26rem;
        margin: 0 auto;
     }
