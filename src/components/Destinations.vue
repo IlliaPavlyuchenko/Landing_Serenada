@@ -106,6 +106,10 @@ const swiperBreakpoints = {
     justify-content: center;
     align-items: center;
     outline: none;
+    transition: all 0.3s ease-in;
+    &:hover {
+      background-color: $color-secondary;
+    }
   }
 }
 </style>

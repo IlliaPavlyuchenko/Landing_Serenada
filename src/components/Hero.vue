@@ -69,7 +69,7 @@ import calendarIcon from "@/assets/icons/calendar.svg?url";
     padding-bottom: 15rem;
 
     @media (max-width: 768px) {
-       padding-bottom: 5rem;
+      padding-bottom: 5rem;
     }
   }
 
@@ -81,8 +81,8 @@ import calendarIcon from "@/assets/icons/calendar.svg?url";
     margin-bottom: 3.5rem;
 
     @media (max-width: 768px) {
-       font-size: 2.8rem;
-       margin-bottom: 1rem;
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
     }
   }
   &__subtitle {
@@ -93,8 +93,8 @@ import calendarIcon from "@/assets/icons/calendar.svg?url";
     margin-bottom: 11.7rem;
 
     @media (max-width: 768px) {
-       font-size: 1.8rem;
-       margin-bottom: 3rem;
+      font-size: 1.8rem;
+      margin-bottom: 3rem;
     }
 
     & span {
@@ -107,22 +107,22 @@ import calendarIcon from "@/assets/icons/calendar.svg?url";
     gap: 4rem;
     margin-bottom: 6rem;
     @media (max-width: 768px) {
-       flex-direction: column;
-       align-items: center;
-       row-gap: 2.2rem;
-       margin-bottom: 2.4rem;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 2.2rem;
+      margin-bottom: 2.4rem;
     }
   }
   &__info {
     display: flex;
     gap: 11.6rem;
 
-     @media (max-width: 768px) {
-       flex-direction: column;
-       align-items: flex-start;
-       row-gap: 1rem;
-       width: 26rem;
-       margin: 0 auto;
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: flex-start;
+      row-gap: 1rem;
+      width: 26rem;
+      margin: 0 auto;
     }
   }
 }
