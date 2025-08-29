@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from 'vue';
+import { ref } from "vue";
 import { Swiper, SwiperSlide } from "swiper/vue";
 import { Navigation } from "swiper/modules";
 
@@ -65,18 +65,6 @@ const swiperBreakpoints = {
     spaceBetween: 10,
   },
 };
-
-const swiperOptions = {
-  navigation: {
-    prevEl: prevButton,
-    nextEl: nextButton,
-  },
-  modules: [Navigation],
-  loop: true,
-  breakpoints: swiperBreakpoints,
-  slidesPerView: 4,
-  spaceBetween: 30,
-};
 </script>
 
 <template>
@@ -91,10 +79,7 @@ const swiperOptions = {
           :space-between="30"
           :breakpoints="swiperBreakpoints"
           :modules="[Navigation]"
-          :navigation="{
-            nextEl: '.tours .swiper-button-next',
-            prevEl: '.tours .swiper-button-prev',
-          }"
+          :navigation="{ prevEl: prevButton, nextEl: nextButton }"
           :loop="true"
           class="tours__slider"
         >
@@ -108,7 +93,7 @@ const swiperOptions = {
           </SwiperSlide>
         </Swiper>
         <div class="swiper-button-prev" ref="prevButton"></div>
-        <div class="swiper-button-next"  ref="nextButton"></div>
+        <div class="swiper-button-next" ref="nextButton"></div>
       </div>
     </div>
   </section>
