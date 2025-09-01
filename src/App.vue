@@ -8,6 +8,7 @@
       <Advantages />
       <Tours />
       <BookingForm />
+      <Gallery />
     </main>
     <Footer />
   </div>
@@ -21,6 +22,7 @@ import About from "./components/About.vue";
 import Advantages from "./components/Advantages.vue";
 import Tours from "./components/Tours.vue";
 import BookingForm from "./components/BookingForm.vue";
+import Gallery from "./components/Gallery.vue";
 import Footer from "./components/Footer.vue";
 </script>
 

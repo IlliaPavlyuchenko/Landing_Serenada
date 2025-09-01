@@ -107,6 +107,9 @@ const services = ref([]);
   @media (max-width: 1024px) {
     margin-bottom: 34rem;
   }
+  @media (max-width: 768px) {
+    margin-bottom: 40rem;
+  }
 }
 .booking {
   &__img {
