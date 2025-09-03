@@ -33,14 +33,9 @@ const imagesBottom = [
   new URL("../assets/images/gallery7.png", import.meta.url).href,
 ];
 
-// const groupedImages = [];
-// for (let i = 0; i < images.length; i += 2) {
-//   groupedImages.push(images.slice(i, i + 2));
-// }
-
 const swiperBreakpoints = {
   1440: {
-    slidesPerView: 4,
+    slidesPerView: 3,
     spaceBetween: 30,
   },
 
@@ -56,7 +51,7 @@ const swiperBreakpoints = {
 
   0: {
     slidesPerView: 1,
-    spaceBetween: 30,
+    spaceBetween: 15,
   },
 };
 </script>
@@ -70,7 +65,7 @@ const swiperBreakpoints = {
       <div class="gallery">
         <Swiper
           :modules="[Navigation, Scrollbar, Autoplay]"
-          :slides-per-view="4"
+          :slides-per-view="3"
           :space-between="30"
           :navigation="{
             nextEl: '.swiper-button-next',
@@ -118,6 +113,9 @@ const swiperBreakpoints = {
     display: flex;
     flex-direction: column;
     gap: 3rem;
+    @media (max-width: 768px) {
+      gap: 1.5rem;
+    }
   }
 
   &__img {
@@ -126,10 +124,17 @@ const swiperBreakpoints = {
     border-radius: 1.2rem;
     display: block;
     margin-left: -8rem;
+
+    @media (max-width: 425px) {
+      max-width: 48rem;
+    }
   }
 
   &__img--bottom {
     margin-left: 10rem;
+    @media (max-width: 425px) {
+      margin-left: 5rem;
+    }
   }
 
   &__controls {
@@ -149,6 +154,9 @@ const swiperBreakpoints = {
     text-decoration: none;
     white-space: nowrap;
     align-items: center;
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 }
 
@@ -192,6 +200,12 @@ const swiperBreakpoints = {
 
   :deep(.swiper-scrollbar-drag) {
     background: #6a7799;
+  }
+}
+
+.swiper-slide {
+  @media (max-width: 425px) {
+    max-width: 48rem;
   }
 }
 </style>
