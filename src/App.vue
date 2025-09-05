@@ -10,6 +10,7 @@
       <BookingForm />
       <Gallery />
       <Faqs />
+      <Contact />
     </main>
     <Footer />
   </div>
@@ -25,6 +26,7 @@ import Tours from "./components/Tours.vue";
 import BookingForm from "./components/BookingForm.vue";
 import Gallery from "./components/Gallery.vue";
 import Faqs from "./components/Faqs.vue";
+import Contact from "./components/Contact.vue";
 import Footer from "./components/Footer.vue";
 </script>
 
