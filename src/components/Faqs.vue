@@ -107,6 +107,9 @@ const toggleFaq = (index) => {
     padding: 3rem 4rem;
     box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.1);
     cursor: pointer;
+     @media (max-width: 768px) {
+      padding: 3rem 1.5rem;
+    }
   }
   &__question {
     display: flex;
@@ -114,6 +117,9 @@ const toggleFaq = (index) => {
     align-items: center;
     font-size: 2.2rem;
     font-weight: 600;
+    & span {
+      width: 85%;
+    }
   }
   &__answer {
     font-size: 2rem;
