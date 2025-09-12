@@ -99,6 +99,9 @@ const services = ref([]);
 <style lang="scss" scoped>
 .section__title--w {
   padding-top: 8rem;
+  @media (max-width: 420px) {
+    padding-top: 4rem;
+  }
 }
 .container {
   position: relative;
@@ -108,7 +111,7 @@ const services = ref([]);
     margin-bottom: 34rem;
   }
   @media (max-width: 768px) {
-    margin-bottom: 40rem;
+    margin-bottom: 43rem;
   }
 }
 .booking {

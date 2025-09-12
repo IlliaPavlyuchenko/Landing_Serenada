@@ -52,6 +52,9 @@ body {
 .section__head {
   margin-bottom: 6rem;
   text-align: center;
+  @media (max-width: 420px) {
+    text-align: start;
+  }
 }
 
 .section__title {
