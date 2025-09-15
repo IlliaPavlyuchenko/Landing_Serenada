@@ -14,6 +14,7 @@
     </main>
     <Footer />
   </div>
+  <ScrollTop />
 </template>
 
 <script setup>
@@ -28,6 +29,7 @@ import Gallery from "./components/Gallery.vue";
 import Faqs from "./components/Faqs.vue";
 import Contact from "./components/Contact.vue";
 import Footer from "./components/Footer.vue";
+import ScrollTop from "./components/ScrollTop.vue";
 </script>
 
 <style lang="scss">
