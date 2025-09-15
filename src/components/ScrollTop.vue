@@ -43,15 +43,15 @@ onUnmounted(() => {
 <style lang="scss" scoped>
 .scroll-top {
   position: fixed;
-  bottom: 30px;
-  right: 30px;
-  width: 45px;
-  height: 45px;
+  bottom: 3rem;
+  right: 3rem;
+  width: 4.5rem;
+  height: 4.5rem;
   border: none;
   border-radius: 50%;
   background: $color-primary;
   cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.2);
   transition: all 0.5s ease;
   z-index: 999;
 

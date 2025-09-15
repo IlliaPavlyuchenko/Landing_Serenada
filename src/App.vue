@@ -4,13 +4,13 @@
     <main class="main">
       <Hero />
       <Destinations />
-      <About />
-      <Advantages />
-      <Tours />
+      <About id="about" />
+      <Advantages id="advantages" />
+      <Tours id="tours" />
       <BookingForm />
-      <Gallery />
+      <Gallery id="gallery" />
       <Faqs />
-      <Contact />
+      <Contact id="contact" />
     </main>
     <Footer />
   </div>

@@ -6,6 +6,10 @@ const isMenuOpen = ref(false);
 const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value;
 };
+
+const closeMenu = () => {
+  isMenuOpen.value = false;
+};
 </script>
 
 <template>
@@ -42,16 +46,20 @@ const toggleMenu = () => {
 
     <nav class="side-menu" :class="{ 'side-menu--open': isMenuOpen }">
       <ul>
-        <li><a href="#">Головна</a></li>
-        <li><a href="#">Про нас</a></li>
-        <li><a href="#">Круїзи</a></li>
-        <li><a href="#">Контакти</a></li>
+        <li><a href="#about" @click="closeMenu">Про нас</a></li>
+        <li><a href="#advantages" @click="closeMenu">Преимущества</a></li>
+        <li><a href="#tours" @click="closeMenu">Туры</a></li>
+        <li><a href="#gallery" @click="closeMenu">Галерея</a></li>
+        <li><a href="#contact" @click="closeMenu">Контакти</a></li>
       </ul>
     </nav>
   </header>
 </template>
 
 <style lang="scss" scoped>
+html {
+  scroll-behavior: smooth;
+}
 .header {
   display: flex;
   align-items: center;
